@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,15 +16,15 @@
       <span>My Portfolio</span>
     </a>
 
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+    <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
     <nav class="nav-menu" aria-label="Main navigation">
-      <a href="index.html" data-page="intro">Introduction</a>
-      <a href="activities.html" data-page="activities">Activities</a>
+      <a href="index.html" data-page="intro">소개</a>
+      <a href="activities.html" data-page="activities">활동</a>
     </nav>
   </header>
 
@@ -34,18 +34,19 @@
         <p class="eyebrow">Student Portfolio</p>
         <h1>PORTFOLIO</h1>
         <p class="hero-text">
-          저는 유용한 디지털 경험을 구축하고, 새로운 기술을 배우며, 아이디어를 간단하고 세련된 프로젝트로 구현하는 것을 즐깁니다.
+          새로운 기술을 배우고, 아이디어를 실제 서비스로 구현하는 과정을 좋아합니다.
+          사용자가 편하게 느낄 수 있는 웹 경험을 만드는 것이 목표입니다.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="activities.html">View Activities</a>
-          <a class="button secondary" href="mailto:hello@example.com">Contact Me</a>
+          <a class="button primary" href="activities.html">활동 보기</a>
+          <a class="button secondary" href="mailto:hello@example.com">문의하기</a>
         </div>
       </div>
 
       <div class="profile-panel" aria-label="Profile summary">
-        <div class="avatar">AK</div>
+        <div class="avatar">AH</div>
         <h2>허아진</h2>
-        <p>Frontend Learner • Creative Builder • Problem Solver</p>
+        <p>Frontend Learner · Creative Builder · Problem Solver</p>
         <div class="profile-stats">
           <span><strong>8</strong> Projects</span>
           <span><strong>3</strong> Clubs</span>
@@ -56,14 +57,15 @@
 
     <section class="section content-grid">
       <article class="card">
-        <h2>저는</h2>
+        <h2>소개</h2>
         <p>
-          웹 디자인, 애플리케이션 개발 및 팀워크에 관심이 있습니다. 제 목표는 사람들이 사용하기 쉽고 의미 있는 제품을 만드는 것입니다.
+          웹 디자인과 애플리케이션 개발, 그리고 협업에 관심이 있습니다.
+          사람들에게 도움이 되는 쉽고 의미 있는 결과물을 만들고 싶습니다.
         </p>
       </article>
 
       <article class="card">
-        <h2>능력</h2>
+        <h2>역량</h2>
         <div class="chip-list">
           <span>HTML</span>
           <span>CSS</span>
@@ -76,9 +78,35 @@
       <article class="card">
         <h2>목표</h2>
         <p>
-          저는 코딩 능력을 계속 향상시키고, 더 많은 프로젝트에 참여하며, 꾸준한 성장을 보여주는 포트폴리오를 구축하고 싶습니다.
+          코딩 역량을 꾸준히 키우고 다양한 프로젝트에 참여하며,
+          성장 과정을 보여주는 포트폴리오를 만들어가고 있습니다.
         </p>
       </article>
+    </section>
+
+    <section class="section featured-project">
+      <div class="project-copy">
+        <p class="eyebrow">Featured Service</p>
+        <h2>AI 설문서비스</h2>
+        <p>
+          사용자가 설문 목적을 입력하면 AI가 질문을 추천하고, 응답 결과를 요약해
+          인사이트를 제공하는 설문 서비스 아이디어입니다.
+        </p>
+        <div class="chip-list">
+          <span>AI</span>
+          <span>Survey</span>
+          <span>Data Summary</span>
+        </div>
+      </div>
+      <div class="survey-preview" aria-label="AI survey service preview">
+        <div class="survey-bar"></div>
+        <h3>만족도 조사를 만들어줘</h3>
+        <ul>
+          <li>질문 자동 생성</li>
+          <li>응답 감정 분석</li>
+          <li>핵심 결과 요약</li>
+        </ul>
+      </div>
     </section>
   </main>
 

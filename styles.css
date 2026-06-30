@@ -178,7 +178,9 @@ h2 {
 
 .profile-panel,
 .card,
-.activity-card {
+.activity-card,
+.featured-project,
+.survey-preview {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
@@ -231,11 +233,58 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  padding-bottom: 72px;
+  padding-bottom: 28px;
 }
 
 .card {
   padding: 24px;
+}
+
+.featured-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 72px;
+  padding: 28px;
+}
+
+.project-copy p {
+  color: var(--muted);
+}
+
+.survey-preview {
+  padding: 22px;
+  background: var(--surface-strong);
+  box-shadow: none;
+}
+
+.survey-preview h3 {
+  margin: 18px 0 14px;
+  font-size: 1.1rem;
+}
+
+.survey-preview ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.survey-preview li {
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.survey-bar {
+  width: 64%;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
 }
 
 .card p,
@@ -297,6 +346,27 @@ h2 {
   font-weight: 800;
 }
 
+.highlight-activity {
+  border-color: rgba(23, 105, 224, 0.35);
+  background: linear-gradient(135deg, #ffffff 0%, #eef5ff 100%);
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.feature-list span {
+  padding: 12px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--primary-dark);
+  font-weight: 800;
+  text-align: center;
+}
+
 .footer {
   padding: 28px 6vw;
   border-top: 1px solid var(--line);
@@ -342,11 +412,19 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .featured-project {
+    grid-template-columns: 1fr;
+  }
+
   .profile-stats {
     grid-template-columns: 1fr;
   }
 
   .activity-card {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-list {
     grid-template-columns: 1fr;
   }
 }

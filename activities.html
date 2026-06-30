@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,35 +16,58 @@
       <span>My Portfolio</span>
     </a>
 
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+    <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
     <nav class="nav-menu" aria-label="Main navigation">
-      <a href="index.html" data-page="intro">Introduction</a>
-      <a href="activities.html" data-page="activities">Activities</a>
+      <a href="index.html" data-page="intro">소개</a>
+      <a href="activities.html" data-page="activities">활동</a>
     </nav>
   </header>
 
   <main>
     <section class="page-title section">
       <p class="eyebrow">Activity List</p>
-      <h1>Projects, clubs, and achievements</h1>
+      <h1>프로젝트, 동아리, 성과</h1>
       <p>
-        관심사, 팀워크, 실질적 성장을 보여주는 의미 있는 활동에 대한 기록.
+        관심사와 협업 경험, 그리고 직접 만든 서비스 아이디어를 정리한 활동 기록입니다.
       </p>
     </section>
 
     <section class="section activity-list" aria-label="Activity cards">
+      <article class="activity-card highlight-activity">
+        <div class="activity-icon">AI</div>
+        <div>
+          <p class="activity-date">2026년 대표 프로젝트</p>
+          <h2>AI 설문서비스</h2>
+          <p>
+            설문 주제와 목적을 입력하면 AI가 질문을 자동으로 제안하고, 수집된 응답을
+            요약해 사용자가 빠르게 의견을 분석할 수 있도록 돕는 서비스입니다.
+          </p>
+          <div class="feature-list">
+            <span>질문 자동 추천</span>
+            <span>응답 요약</span>
+            <span>결과 인사이트</span>
+          </div>
+          <div class="chip-list">
+            <span>AI</span>
+            <span>설문</span>
+            <span>서비스 기획</span>
+          </div>
+        </div>
+      </article>
+
       <article class="activity-card">
         <div class="activity-icon">01</div>
         <div>
           <p class="activity-date">March 2026</p>
           <h2>Personal Portfolio Website</h2>
           <p>
-            프로필과 활동을 소개하기 위해 HTML, CSS, JavaScript를 사용하여 반응형 포트폴리오를 설계하고 구축하였습니다.
+            프로필과 활동을 소개하기 위해 HTML, CSS, JavaScript를 사용하여
+            반응형 포트폴리오 웹사이트를 설계하고 구현했습니다.
           </p>
           <div class="chip-list">
             <span>Web</span>
@@ -59,7 +82,8 @@
           <p class="activity-date">May 2026</p>
           <h2>School Coding Club</h2>
           <p>
-            동아리 회원들과 협력하여 프로그래밍 문제를 해결하고 기술적 아이디어를 명확하게 발표하였습니다.
+            동아리 회원들과 협력하여 프로그래밍 문제를 해결하고,
+            기술적인 아이디어를 명확하게 발표하는 연습을 했습니다.
           </p>
           <div class="chip-list">
             <span>JavaScript</span>
@@ -74,10 +98,12 @@
           <p class="activity-date">June 2026</p>
           <h2>Discord Bot</h2>
           <p>
-            디스코드 플랫폼을 기반으로 한 반응형 채팅 봇을 제작하였습니다.
+            디스코드 플랫폼을 기반으로 자동 반응과 채팅 기능을 제공하는
+            간단한 봇 서비스를 제작했습니다.
           </p>
           <div class="chip-list">
             <span>Service</span>
+            <span>Bot</span>
           </div>
         </div>
       </article>
